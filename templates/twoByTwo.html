@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2&cross;2 Matrix</title>
+	<script src="{{ url_for('static', filename='jquery.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="input">
+		<h1>Enter Matrix</h1>
+
+		<form id="input_matrix">
+			<table>
+				<tr>
+					<td><input type="number" name="a11"></td>
+					<td><input type="number" name="a12"></td>
+				</tr>
+				<tr>
+					<td><input type="number" name="a21"></td>
+					<td><input type="number" name="a22"></td>
+				</tr>
+			</table>
+			<input type="submit" value="Calculate!">
+			<input type="reset" value="Reset">
+		</form>
+		<p class="error"></p>
+	</div>
+	<div class="answers">
+		<p class="determinant"></p>
+		<p class="transpose"></p>
+		<p class="inverse"></p>
+		<p class="square"></p>
+	</div>
+
+	<script src="{{ url_for('static', filename='twoByTwo.js') }}"></script>
+
+</body>
+</html>
